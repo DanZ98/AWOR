@@ -1,0 +1,19 @@
+@import '../global-styles/global-styles.scss';
+
+/////// Header Section ///////
+.header {
+    padding: 2.5rem 2rem;
+    background-color: $aceHelpfulRed;
+    color: $white;
+}
+
+.header-section {
+    @include marginCenter;
+}
+
+.header-title {
+    margin-bottom: 1rem;
+    font-family: $fontRobotoCondensed;
+    font-weight: $fontWeight400;
+    font-size: 3.6rem;
+}

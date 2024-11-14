@@ -1,0 +1,17 @@
+//Colors
+$white: #fff;
+$aceHelpfulRed: #d40029;
+
+//Font Family
+$fontRobotoCondensed: 'Roboto Condensed', sans-serif;
+
+//Font Weight
+$fontWeight400: 400;
+
+// Mixins
+@mixin marginCenter {
+    max-width: 110rem;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
