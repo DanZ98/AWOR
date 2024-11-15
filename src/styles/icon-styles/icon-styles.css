@@ -4,16 +4,26 @@
 
 .icon-container {
   display: block;
-  white-space: nowrap;
+  padding: 2.5rem 0 1.5rem 0;
   max-width: 110rem;
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  padding: 2.5rem 0;
+  white-space: nowrap;
   overflow-x: scroll;
   overflow-y: hidden; /* Hide vertical scrollbar */
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+@media screen and (min-width: 768px) {
+  .icon-container {
+    -webkit-user-select: auto;
+       -moz-user-select: auto;
+            user-select: auto;
+  }
 }
 
 .icon-container::-webkit-scrollbar {

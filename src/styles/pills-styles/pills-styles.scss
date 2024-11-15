@@ -1,1 +1,43 @@
 @import '../global-styles/global-styles.scss';
+
+/////// Pills Section ///////
+.pills {
+    margin: 0 2rem;
+    text-align: center;
+}
+
+.pills-container {
+    @include scrollHorizontal;
+    padding: 0 0 1.5rem 0;
+    
+    @media screen and (min-width: 768px) {
+        white-space: normal;
+    }
+}
+
+.icon-container::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}
+
+.pills-link{
+    margin: .7rem .3rem;
+    padding: .6rem .9rem;
+    font-size: 1.4rem;
+    color: #000;
+    background: #fff;
+    border: 1px solid #d1d1d1;
+    display: inline-block;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: ease all .4s;
+    user-select: none;
+
+  
+
+    &:hover {
+        background: #eee;
+        cursor: $cursorPointer;
+    }
+}
