@@ -1,5 +1,6 @@
 //Colors
 $white: #fff;
+$black: #000;
 $aceHelpfulRed: #d40029;
 
 //Font Family
@@ -7,6 +8,8 @@ $fontRobotoCondensed: 'Roboto Condensed', sans-serif;
 
 //Font Weight
 $fontWeight400: 400;
+
+$cursorPointer: pointer;
 
 // Mixins
 @mixin marginCenter {

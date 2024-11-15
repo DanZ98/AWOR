@@ -1,3 +1,89 @@
 @import '../global-styles/global-styles.scss';
 
 /////// Icons Section ///////
+.icon {
+    background-color: $white;
+}
+
+.icon-container {
+    display: block;
+    white-space: nowrap;
+    @include marginCenter;
+    padding: 2.5rem 0;
+    overflow-x: scroll;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.icon-container::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}
+
+.icon-content {
+    white-space: normal;
+    margin: 0 1rem;
+    width: 11.5rem;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    cursor: $cursorPointer;
+}
+
+.icon-img-container {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 5.3rem;
+    height: 5.3rem;
+    margin: 0 auto 5px auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d40029;
+    transition: ease all .4s;
+
+    &:hover {
+        animation: pulse-animation 1.3s infinite;
+    }
+    
+    .category-icon-svgcontainer {
+        animation: pulse-animation 1.3s infinite;
+    }
+    
+    .hover-pulsing {
+        animation: pulse-animation 1.3s infinite
+    }
+    
+    @keyframes pulse-animation {
+        0% {
+            box-shadow: 0 0 0 0 rgba(212,0,41,.3)
+        }
+        
+        100% {
+            box-shadow: 0 0 0 20px transparent
+        }
+    }
+    
+    &:hover {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    
+    .icon-image {
+        width: 3.6rem;
+        height: 3.6rem;
+    }
+}
+
+.icon-content.active .icon-img-container {
+    animation: pulse-animation 1.3s infinite;
+}
+
+.icon-title {
+    color: $black;
+    font-family: $fontRobotoCondensed;
+    font-weight: $fontWeight400;
+}
