@@ -17,4 +17,8 @@
   display: inline-block;
   color: #fff;
   font-size: 1.4rem;
+  transition: ease all 0.4s;
+}
+.store-opportunities .store-opportunities-analyticslink:hover {
+  color: #d1d1d1;
 }/*# sourceMappingURL=store-opportunities.styles.css.map */

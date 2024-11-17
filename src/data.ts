@@ -190,7 +190,7 @@ export const StoreCardsData = [
     id: 4,
     title: 'Ace Marketing Muscle',
     description: 'Total Emails Deployed',
-    metric: '0',
+    metric: '0%',
     goal: '2-4/month',
     link: 'https://acenet.aceservices.com/awor/ordering/economic-order-quantities'
   },
