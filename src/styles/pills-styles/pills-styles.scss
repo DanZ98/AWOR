@@ -2,12 +2,12 @@
 
 /////// Pills Section ///////
 .pills {
-    margin: 0 2rem;
     text-align: center;
 }
 
 .pills-container {
     @include scrollHorizontal;
+    @include marginCenter;
     padding: 0 0 1.5rem 0;
     
     @media screen and (min-width: 768px) {
@@ -26,16 +26,29 @@
     color: #000;
     background: #fff;
     border: 1px solid #d1d1d1;
-    display: inline-block;
+    visibility: hidden;
     -webkit-border-radius: 2rem;
     -moz-border-radius: 2rem;
     border-radius: 2rem;
     text-decoration: none;
-    transition: ease all .4s;
+    transition: opacity 0.7s ease, transform 0.7s ease;
     user-select: none;
+    opacity: 0;
+    transform: translateY(-10px);
+
+    &.pills-display {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
 
     &:hover {
         background: #eee;
         cursor: $cursorPointer;
     }
 }
+
+
+// .pills-display {
+//     display: inline-block;
+// }
