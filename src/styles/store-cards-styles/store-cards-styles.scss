@@ -1,0 +1,63 @@
+@import '../global-styles/global-styles.scss';
+
+/////// Store Card Section ///////
+.store-card-container {
+    display: inline-block;
+    margin: 0 .9rem 1.6rem 0;
+    width: 23.5rem;
+    text-align: left;
+    padding: .8rem;
+    background-color: $white;
+    font-family: $fontRobotoCondensed;
+    transition: ease all .4s;
+
+    &:hover {
+        box-shadow: 0px 0px 38px 0px #000;
+        -webkit-box-shadow: 0px 0px 38px 0px #000;
+        -moz-box-shadow: 0px 0px 38px 0px #000;
+    }
+
+    .store-card-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .store-card-title, .store-card-metric {
+        color: $aceHelpfulRed;
+    }
+    
+    .store-card-title, .store-card-goal {
+        font-size: 1.2rem;
+    }
+    
+    .store-card-title {
+        color: $aceHelpfulRed;
+    }
+    
+    .store-card-description {
+        color: $black;
+    }
+    
+    .store-card-metric {
+        font-size: 3.2rem;
+    }
+    
+    .store-card-goal {
+        color: #8b8b8b;
+    }
+    
+    .store-cared-goal {
+        font-size: 1.4rem;
+        color: #34C759;
+    }
+    
+    .store-card-chevron {
+        color: #ACACAC;
+        font-size: 3.5rem;
+        font-weight: 300;
+    }
+}
+
+
+

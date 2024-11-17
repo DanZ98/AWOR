@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { IconData, PillsData } from "../data";
 import Pills from "./Pills";
 import useHorizontalDrag from "../hooks/horizontalDragg";
@@ -6,7 +6,7 @@ import '../styles/icon-styles/icon-styles.css';
 
 const IconSelection = () => {
 
-    const [activeIcon, setActiveIcon] = useState<number | null>(1);
+    const [activeIcon, setActiveIcon] = useState(IconData[0].id);
     const [filteredPills, setFilteredPills] = useState(PillsData);
     const [displayPill, setDisplayPill] = useState<boolean>(false);
 
@@ -17,7 +17,6 @@ const IconSelection = () => {
         handleMouseUp,
         handleMouseMove,
     } = useHorizontalDrag();
-
 
     const getPillRangeByIconId = (iconId: number) => {
         // Define the ranges for each icon ID
@@ -34,6 +33,17 @@ const IconSelection = () => {
         };
         return ranges[iconId];
     };
+    
+    useEffect(() => {
+        // Set default active icon to "Financial Management" and execute range { start: 1, end: 3 }
+        const defaultIconId = 1; // Assuming "Financial Management" has id 1
+        setActiveIcon(defaultIconId);
+        const range = getPillRangeByIconId(defaultIconId);
+        const filtered = PillsData.filter(pill => pill.id >= range.start && pill.id <= range.end);
+        setFilteredPills(filtered);
+        setDisplayPill(true);
+        console.log(`Executing range: ${range.start} to ${range.end}`);
+    }, []);
 
     // Function to handle icon click
     const handleIconClick = (iconId: number) => {
@@ -46,36 +56,29 @@ const IconSelection = () => {
             setFilteredPills(filtered);
             setDisplayPill(true);
         } 
-        
-        // Add smooth transition class to pills-link elements
-        const pillsLinks = document.querySelectorAll('.pills-link');
-        pillsLinks.forEach(link => {
-            link.classList.add('smooth-transition');
-            setTimeout(() => {
-            link.classList.remove('smooth-transition');
-            }, 700); // Duration should match the CSS transition duration
-        });
     };
 
     return (
-        <div>
-            <div className="icon-container" ref={containerRef}
-                onMouseDown={handleMouseDown}
-                onMouseLeave={handleMouseLeave}
-                onMouseUp={handleMouseUp}
-                onMouseMove={handleMouseMove}>
-                {IconData.map(icon => (
-                    <div key={icon.id} className={`icon-content ${activeIcon === icon.id ? 'active' : ''}`}
-                        onClick={() => handleIconClick(icon.id)}>
-                        <div className="icon-img-container">
-                            <img src={icon.img} alt={icon.title} className="icon-image" />
+        <section>
+            <div className="icon">
+                <div className="icon-container" ref={containerRef}
+                    onMouseDown={handleMouseDown}
+                    onMouseLeave={handleMouseLeave}
+                    onMouseUp={handleMouseUp}
+                    onMouseMove={handleMouseMove}>
+                    {IconData.map(icon => (
+                        <div key={icon.id} className={`icon-content ${activeIcon === icon.id ? 'active' : ''}`}
+                            onClick={() => handleIconClick(icon.id)}>
+                            <div className="icon-img-container">
+                                <img src={icon.img} alt={icon.title} className="icon-image" />
+                            </div>
+                            <div className="icon-title">{icon.title}</div>
                         </div>
-                        <div className="icon-title">{icon.title}</div>
-                    </div>
-                ))}
+                    ))}
+                </div>
+                <Pills filteredPills={filteredPills} displayPill={displayPill} />
             </div>
-            <Pills filteredPills={filteredPills} displayPill={displayPill} />
-        </div>
+        </section>
     );
 };
 

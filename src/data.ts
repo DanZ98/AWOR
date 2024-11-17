@@ -159,3 +159,48 @@ export const PillsData = [
     title: 'B2B Status',
   },
 ];
+
+// Store Cards Section
+export const StoreCardsData = [
+  {
+    id: 1,
+    title: 'Sales',
+    description: 'Overall Customer Satisfaction',
+    metric: '100%',
+    goal: '80%',
+    link: 'https://acenet.aceservices.com/awor/promotional-ordering-and-execution/dynamic-promotions-instant-savings'
+  },
+  {
+    id: 2,
+    title: 'SOCi',
+    description: 'Review Response Time (Hrs)',
+    metric: '55 hrs',
+    goal: '< 24 hrs',
+    link: 'https://acenet.aceservices.com/awor/train-and-develop/associate-badge-program'
+  },
+  {
+    id: 3,
+    title: 'Employee Engagement',
+    description: 'Employee Engagement',
+    metric: '75%',
+    goal: '80%',
+    link: 'https://acenet.aceservices.com/awor/manage-and-coach/employee-engagement-survey'
+  },
+  {
+    id: 4,
+    title: 'Ace Marketing Muscle',
+    description: 'Total Emails Deployed',
+    metric: '0',
+    goal: '2-4/month',
+    link: 'https://acenet.aceservices.com/awor/ordering/economic-order-quantities'
+  },
+  {
+    id: 5,
+    title: 'Optimal Shelf Quantity',
+    description: 'Min Order Point Acceptance',
+    metric: '42%',
+    goal: '80%',
+    link: 'https://acenet.aceservices.com/awor/inventory-record-accuracy/achieving-inventory-accuracy'
+  },
+  
+];

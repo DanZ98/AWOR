@@ -1,4 +1,3 @@
-// import { useEffect } from "react";
 import "../styles/pills-styles/pills-styles.css";
 import useHorizontalDrag from "../hooks/horizontalDragg";
 
@@ -23,7 +22,6 @@ const Pills = ({ filteredPills, displayPill }: { filteredPills: Array<any>, disp
                 {filteredPills.map((item) => {
                     return (
                         <a href={`#${item.title}`} key={item.id} className={`pills-link ${displayPill ? 'pills-display' : ''}`}>
-
                             {item.title}
                         </a>
                     )})

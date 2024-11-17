@@ -31,22 +31,19 @@
   color: #000;
   background: #fff;
   border: 1px solid #d1d1d1;
-  visibility: hidden;
+  display: none;
   border-radius: 2rem;
   text-decoration: none;
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transition: ease all 0.4s;
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  opacity: 0;
-  transform: translateY(-10px);
-}
-.pills-link.pills-display {
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0);
+  -moz-user-select: none;
+  user-select: none;
 }
 .pills-link:hover {
   background: #eee;
   cursor: pointer;
+}
+
+.pills-display {
+  display: inline-block;
 }/*# sourceMappingURL=pills-styles.css.map */
