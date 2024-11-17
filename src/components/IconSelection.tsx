@@ -5,9 +5,11 @@ import useHorizontalDrag from "../hooks/horizontalDragg";
 import '../styles/icon-styles/icon-styles.css';
 
 const IconSelection = () => {
+
     const [activeIcon, setActiveIcon] = useState<number | null>(1);
     const [filteredPills, setFilteredPills] = useState(PillsData);
     const [displayPill, setDisplayPill] = useState<boolean>(false);
+
     const {
         containerRef,
         handleMouseDown,
@@ -15,6 +17,7 @@ const IconSelection = () => {
         handleMouseUp,
         handleMouseMove,
     } = useHorizontalDrag();
+
 
     const getPillRangeByIconId = (iconId: number) => {
         // Define the ranges for each icon ID
@@ -44,14 +47,14 @@ const IconSelection = () => {
             setDisplayPill(true);
         } 
         
-         // Add smooth transition class to pills-link elements
-  const pillsLinks = document.querySelectorAll('.pills-link');
-  pillsLinks.forEach(link => {
-    link.classList.add('smooth-transition');
-    setTimeout(() => {
-      link.classList.remove('smooth-transition');
-    }, 700); // Duration should match the CSS transition duration
-  });
+        // Add smooth transition class to pills-link elements
+        const pillsLinks = document.querySelectorAll('.pills-link');
+        pillsLinks.forEach(link => {
+            link.classList.add('smooth-transition');
+            setTimeout(() => {
+            link.classList.remove('smooth-transition');
+            }, 700); // Duration should match the CSS transition duration
+        });
     };
 
     return (
@@ -75,5 +78,6 @@ const IconSelection = () => {
         </div>
     );
 };
+
 
 export default IconSelection;
