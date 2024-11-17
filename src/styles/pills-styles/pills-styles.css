@@ -8,6 +8,10 @@
   overflow-y: hidden; /* Hide vertical scrollbar */
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
+  max-width: 110rem;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
   padding: 0 0 1.5rem 0;
 }
 @media screen and (min-width: 768px) {

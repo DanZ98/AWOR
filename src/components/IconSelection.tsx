@@ -22,8 +22,6 @@ const IconSelection = () => {
         setActiveIcon(id);
         setIsPillsLinkVisible(prevState => !prevState);
         console.log('isPillsLinkVisible:', !isPillsLinkVisible);
-
-   
     };
 
     return (

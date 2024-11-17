@@ -7,6 +7,7 @@
 
 .pills-container {
     @include scrollHorizontal;
+    @include marginCenter;
     padding: 0 0 1.5rem 0;
     
     @media screen and (min-width: 768px) {
