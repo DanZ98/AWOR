@@ -3,7 +3,11 @@ import { PillsData } from "../data";
 import "../styles/pills-styles/pills-styles.css";
 import useHorizontalDrag from "../hooks/horizontalDragg";
 
-const Pills = () => {
+interface PillsLinkVisibility {
+    isPillsLinkVisible: boolean;
+}
+
+const Pills = ({isPillsLinkVisible} : PillsLinkVisibility) => {
     const {
         containerRef,
         handleMouseDown,
@@ -38,7 +42,7 @@ const Pills = () => {
                 onMouseMove={handleMouseMove}>
                 {PillsData.map((item) => {
                     return (
-                        <a href={`#${item.title}`} key={item.id} className="pills-link">
+                        <a href={`#${item.title}`} key={item.id} className={`pills-link ${isPillsLinkVisible ? 'pills-display' : '' }`}>
                             {item.title}
                         </a>
                     )

@@ -5,7 +5,9 @@ import useHorizontalDrag from "../hooks/horizontalDragg";
 import '../styles/icon-styles/icon-styles.css';
 
 const IconSelection = () => {
+
     const [activeIcon, setActiveIcon] = useState<number | null>(1);
+    const [isPillsLinkVisible, setIsPillsLinkVisible] = useState<boolean>(false);
     const {
         containerRef,
         handleMouseDown,
@@ -18,6 +20,10 @@ const IconSelection = () => {
     const handleIconClick = (id: number) => {
         console.log('Icon clicked:', id);
         setActiveIcon(id);
+        setIsPillsLinkVisible(prevState => !prevState);
+        console.log('isPillsLinkVisible:', !isPillsLinkVisible);
+
+   
     };
 
     return (
@@ -45,7 +51,7 @@ const IconSelection = () => {
                     );
                 })}   
             </div>
-            <Pills />
+            <Pills isPillsLinkVisible={isPillsLinkVisible} />
         </section>
     )
 }

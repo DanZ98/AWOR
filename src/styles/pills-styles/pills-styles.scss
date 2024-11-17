@@ -2,7 +2,6 @@
 
 /////// Pills Section ///////
 .pills {
-    margin: 0 2rem;
     text-align: center;
 }
 
@@ -31,11 +30,21 @@
     -moz-border-radius: 2rem;
     border-radius: 2rem;
     text-decoration: none;
-    transition: ease all .4s;
+    transition: transform .4s ease;
     user-select: none;
-
+    position: relative;
+    right: -106%;
+    transform: translateX(100%);
+  
     &:hover {
         background: #eee;
         cursor: $cursorPointer;
     }
 }
+
+.pills-display {
+    position: relative;
+    right: 0;
+    transform: translateX(0);
+}
+

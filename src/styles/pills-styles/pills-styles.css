@@ -1,5 +1,4 @@
 .pills {
-  margin: 0 2rem;
   text-align: center;
 }
 
@@ -31,12 +30,21 @@
   display: inline-block;
   border-radius: 2rem;
   text-decoration: none;
-  transition: ease all 0.4s;
+  transition: transform 0.4s ease;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  position: relative;
+  right: -106%;
+  transform: translateX(100%);
 }
 .pills-link:hover {
   background: #eee;
   cursor: pointer;
+}
+
+.pills-display {
+  position: relative;
+  right: 0;
+  transform: translateX(0);
 }/*# sourceMappingURL=pills-styles.css.map */
