@@ -1,6 +1,8 @@
 import Header from "./components/Header";
 import IconSelection from "./components/IconSelection";
 import StoreOpportunities from "./components/StoreOpportunities";
+import Topics from "./components/Topics";
+import Contact from "./components/Contact";
 
 const App = () => {
   return (
@@ -8,6 +10,8 @@ const App = () => {
       <Header />
       <IconSelection />
       <StoreOpportunities />
+      <Topics />
+      <Contact />
     </div>
   );
 };

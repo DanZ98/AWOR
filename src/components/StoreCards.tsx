@@ -6,8 +6,8 @@ const StoreCards = () => {
     <div className="store-card">
         {
             StoreCardsData.map((card) => (
-                <a href={card.link} target="blank" className="store-card-link">
-                    <div key={card.id} className="store-card-container">
+                <a href={card.link} target="blank" className="store-card-link" key={card.id}>
+                    <div className="store-card-container">
                         <div className="store-card-flex">
                             <div className="store-card-content">
                                 <p className="store-card-title">{card.title}</p>
