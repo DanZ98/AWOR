@@ -64,6 +64,7 @@
   width: 4.6rem;
   height: 4.6rem;
   @include flexCenter;
+  flex-shrink: 0;
 }
 
 .topics-item-img {
