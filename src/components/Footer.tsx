@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className="footer-col">
                     <h4 className="footer-title">Ace Retailer Care Center</h4>
                     <p className="footer-contact"><img src={phoneIcon} alt="phone" />&nbsp;&nbsp;&nbsp;<a href="tel:8007776797" className='footer-number'>(800) 777-6797</a>&nbsp;&nbsp;or&nbsp;&nbsp;<a href="tel:6309902992" className='footer-number'>(630) 990-2992</a></p>
-                    <p className="footer-message"><img src={messageIcon} alt="email" />&nbsp;&nbsp;&nbsp;Send a message</p>
+                    <p className="footer-message"><img src={messageIcon} alt="email" />&nbsp;&nbsp;&nbsp;<span className='footer-message-content'>Send a message</span></p>
                     <p className="footer-hours-title">Support Hours:</p>
                     <p className="footer-day-time">Monday - Friday 6am - 10pm CST</p>
                     <p className="weekends-time">Weekends &amp; Most Holidays 7am - 7pm CST</p>

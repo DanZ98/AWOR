@@ -1,21 +1,44 @@
 .footer {
+  display: flex;
+  justify-content: start;
   background-color: #424242;
   color: #fff;
 }
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+    background-color: #424242;
+    color: #fff;
+  }
+}
 
 .footer-container {
-  display: flex;
-  justify-content: space-between;
-  max-width: 110rem;
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
+  display: initial;
+  margin: 0 2rem;
   padding: 5.5rem 0;
+}
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 115rem;
+    width: 100%;
+    margin: 0 2rem;
+    text-align: center;
+    padding: 5.5rem 0 1.5rem 0;
+  }
 }
 
 .footer-col {
-  text-align: left;
-  font-size: 1.8rem;
+  margin-bottom: 4rem;
+}
+@media screen and (min-width: 768px) {
+  .footer-col {
+    margin: 0 2rem 4rem 0;
+    text-align: left;
+    font-size: 1.8rem;
+  }
 }
 
 .footer-title {
@@ -24,13 +47,14 @@
   font-size: 2.4rem;
 }
 
-.footer-contact, .footer-message {
-  display: flex;
-  align-items: center;
-}
-
 .footer-contact {
   margin-bottom: 2.3rem;
+}
+@media screen and (min-width: 1033px) {
+  .footer-contact {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .footer-number {
@@ -39,7 +63,21 @@
 }
 
 .footer-message {
+  display: flex;
+  align-items: center;
   margin-bottom: 3.8rem;
+}
+
+.footer-message-content {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0 2px;
+  transition: background-size cubic-bezier(0, 0.5, 0, 1) 0.3s;
+}
+.footer-message-content:hover {
+  background-size: 100% 2px;
+  cursor: pointer;
 }
 
 .footer-hours-title, .footer-day-time, .footer-sun-tues {
