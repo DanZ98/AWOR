@@ -1,9 +1,8 @@
-import { useEffect } from "react";
-import { PillsData } from "../data";
 import "../styles/pills-styles/pills-styles.css";
 import useHorizontalDrag from "../hooks/horizontalDragg";
 
-const Pills = () => {
+const Pills = ({ filteredPills, displayPill }: { filteredPills: Array<any>, displayPill: boolean } ) => {
+
     const {
         containerRef,
         handleMouseDown,
@@ -11,22 +10,6 @@ const Pills = () => {
         handleMouseUp,
         handleMouseMove,
     } = useHorizontalDrag();
-
-    // Prevent default behavior for pills link when dragging
-    useEffect(() => {
-        const links = document.querySelectorAll('.pills-link');
-        const preventDefault = (e: MouseEvent) => e.preventDefault();
-
-        links.forEach(link => {
-            link.addEventListener('mousedown', preventDefault as EventListener);
-        });
-
-        return () => {
-            links.forEach(link => {
-                link.removeEventListener('mousedown', preventDefault as EventListener);
-            });
-        };
-    }, []);
 
     return (
         <div className="pills">
@@ -36,14 +19,13 @@ const Pills = () => {
                 onMouseLeave={handleMouseLeave}
                 onMouseUp={handleMouseUp}
                 onMouseMove={handleMouseMove}>
-                {PillsData.map((item) => {
+                {filteredPills.map((item) => {
                     return (
-                        <a href={`#${item.title}`} key={item.id} className="pills-link">
+                        <a href={`#${item.title}`} key={item.id} className={`pills-link ${displayPill ? 'pills-display' : ''}`}>
                             {item.title}
                         </a>
-                    )
-                    }
-                )}
+                    )})
+                }
             </p>
         </div>
     )

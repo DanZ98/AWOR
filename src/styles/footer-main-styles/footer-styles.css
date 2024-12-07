@@ -1,0 +1,126 @@
+.footer {
+  display: flex;
+  justify-content: start;
+  background-color: #424242;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+    background-color: #424242;
+    color: #fff;
+  }
+}
+
+.footer-container {
+  display: initial;
+  margin: 0 2rem;
+  padding: 5.5rem 0;
+}
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 115rem;
+    width: 100%;
+    margin: 0 2rem;
+    text-align: center;
+    padding: 5.5rem 0 1.5rem 0;
+  }
+}
+
+.footer-col {
+  margin-bottom: 4rem;
+}
+@media screen and (min-width: 768px) {
+  .footer-col {
+    margin: 0 2rem 4rem 0;
+    text-align: left;
+    font-size: 1.8rem;
+  }
+}
+
+.footer-title {
+  margin-bottom: 2.4rem;
+  font-family: "Roboto Slab", serif;
+  font-size: 2.4rem;
+}
+
+.footer-contact {
+  margin-bottom: 2.3rem;
+}
+@media screen and (min-width: 1033px) {
+  .footer-contact {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.footer-number {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-message {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3.8rem;
+}
+
+.footer-message-content {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0 2px;
+  transition: background-size cubic-bezier(0, 0.5, 0, 1) 0.3s;
+}
+.footer-message-content:hover {
+  background-size: 100% 2px;
+  cursor: pointer;
+}
+
+.footer-hours-title, .footer-day-time, .footer-sun-tues {
+  margin-bottom: 0.5rem;
+}
+
+.footer-hours-title {
+  font-weight: 500;
+}
+
+.footer-day-time, .weekends-time, .footer-sun-tues, .footer-wed-sat, .ace-retailer, .footer-ace-retailer, .view-all-link {
+  color: #CACBCD;
+}
+
+.footer-day-time {
+  font-weight: 300;
+}
+
+.footer-ace-retailer {
+  margin-bottom: 1.2rem;
+}
+
+.footer-google-apple {
+  margin-bottom: 1.6rem;
+}
+
+.footer-app {
+  width: 13.5rem;
+  height: auto;
+}
+
+.footer-apple-app {
+  margin-right: 1.3rem;
+  width: 11.5rem;
+  height: auto;
+}
+.footer-apple-app:hover {
+  cursor: pointer;
+}
+
+.footer-google-app {
+  width: 12.5rem;
+}
+.footer-google-app:hover {
+  cursor: pointer;
+}

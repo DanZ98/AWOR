@@ -1,0 +1,80 @@
+@import "../global-styles/global-styles.scss";
+
+/////// Topics Section ///////
+.topics {
+  background: url(../../assets/img/topics-bk.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  padding: 0 2rem;
+
+  @media screen and (min-width: 768px) {
+    @include flexCenter;
+  }
+}
+
+.topics-container {
+  max-width: 54rem;
+  width: 100%;
+  height: auto;
+  padding: 1.7rem;
+  margin: 6.7rem 2rem;
+  background-color: rgba(255, 255, 255, .6);
+  border: 1px solid #d1d1d1;
+}
+
+.topics-container:first-child {
+  margin-bottom: 0;
+
+  @media screen and (min-width: 768px) {
+    margin: 6.7rem 2rem;
+  }
+}
+
+.topics-title {
+  margin-bottom: 1.9rem;
+  font-size: 2.1rem;
+  color: $aceHelpfulRed;
+  font-family: $fontRobotoSlab;
+  font-weight: $fontWeight400;
+}
+
+.topics-item-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #d1d1d1;
+  padding: 1.1rem 0;
+}
+
+.topics-item-container:first-child {
+  padding-top: 0;
+}
+
+.topics-item-container:last-child {
+  padding-bottom: 0;
+  border-bottom: initial;
+}
+
+.topics-item-imgcontainer {
+  border-radius: 50%;
+  border: 1px solid $aceHelpfulRed;
+  width: 4.6rem;
+  height: 4.6rem;
+  @include flexCenter;
+  flex-shrink: 0;
+}
+
+.topics-item-img {
+  width: 3rem;
+  height: auto;
+}
+
+.topics-item-link {
+  margin-left: 1.5rem;
+  color: #333;
+  font-weight: 500;
+}
+

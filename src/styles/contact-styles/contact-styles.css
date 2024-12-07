@@ -1,0 +1,64 @@
+.contact, .contact-phone {
+  color: #fff;
+}
+
+.contact {
+  background-color: #d40029;
+}
+
+.contact-container {
+  position: relative;
+  max-width: 84rem;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.contact-img-container {
+  height: 142px;
+  overflow: hidden;
+}
+@media screen and (min-width: 900px) {
+  .contact-img-container {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.contact-info-container {
+  padding: 3.6rem 0;
+}
+
+.contact-img {
+  width: 9rem;
+  height: auto;
+}
+
+.contact-info {
+  font-size: 2.4rem;
+  font-family: "Roboto Slab", serif;
+}
+
+.contact-phone, .contact-email {
+  text-decoration: none;
+}
+
+.contact-phone {
+  font-weight: 500;
+}
+
+.contact-email {
+  color: #d40029;
+  background-color: #fff;
+  padding: 0.8rem 1.6rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  white-space: nowrap;
+  border-radius: 4px;
+  transition: ease all 0.4s;
+}
+.contact-email:hover {
+  background-color: #eee;
+}/*# sourceMappingURL=contact-styles.css.map */

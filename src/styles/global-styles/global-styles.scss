@@ -2,9 +2,12 @@
 $white: #fff;
 $black: #000;
 $aceHelpfulRed: #d40029;
+$gray42: #424242;
 
 //Font Family
+$fontRoboto: 'Roboto', sans-serif;
 $fontRobotoCondensed: 'Roboto Condensed', sans-serif;
+$fontRobotoSlab: 'Roboto Slab', serif;
 
 //Font Weight
 $fontWeight400: 400;
@@ -17,6 +20,12 @@ $cursorPointer: pointer;
     width: 100%;
     margin: 0 auto;
     text-align: center;
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @mixin scrollHorizontal {

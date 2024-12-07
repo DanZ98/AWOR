@@ -1,0 +1,72 @@
+@import "../global-styles/global-styles.scss";
+
+/////// Contact Section ///////
+.contact, .contact-phone {
+    color: $white;
+}
+
+.contact {
+    background-color: $aceHelpfulRed;
+}
+
+.contact-container {
+    position: relative;
+    max-width: 84rem;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.contact-img-container {
+   
+    height: 142px;
+    overflow: hidden;
+
+    @media screen and (min-width: 900px) {
+        position: absolute;
+        left: 0;
+        bottom: 0;    
+    }
+}
+
+.contact-info-container{
+    padding: 3.6rem 0;
+}
+
+.contact-img {
+    width: 9rem;
+    height: auto;
+}
+
+.contact-info {
+    font-size: 2.4rem;
+    font-family: $fontRobotoSlab;
+}
+
+.contact-phone, .contact-email {
+    text-decoration: none;
+}
+
+.contact-phone {
+    font-weight: 500;
+}
+
+.contact-email {
+    color: $aceHelpfulRed;
+    background-color: $white;
+    padding: 0.8rem 1.6rem;
+    font-family: $fontRoboto;
+    font-size: 1.6rem;
+    white-space: nowrap;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: ease all .4s;
+    -moz-transition: ease all .4s;
+    transition: ease all .4s;
+
+    &:hover {
+        background-color: #eee;
+    }
+}

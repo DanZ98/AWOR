@@ -1,5 +1,4 @@
-// Icon Section
-
+/////////////////////// Icon Section
 import financialManagementIcon from './assets/img/FinancialManagement.svg';
 import inventoryManagementIcon from './assets/img/InventoryManagement.svg';
 import lossPreventionIcon from './assets/img/LossPrevention.svg';
@@ -8,8 +7,19 @@ import peopleManagementIcon from './assets/img/PeopleManagement.svg';
 import eCommerceIcon from './assets/img/eCommerce.svg';
 import storeEnvironment from './assets/img/StoreEnvironment.svg';
 import b2b from './assets/img/B2BPoliciesProcedures.svg';
+import Unproductive_inventory from './assets/img/Unproductive_Inventory_Icon.svg';
+import Instock_Position from './assets/img/Instock_Position_Icon.svg';
+import Ordering_Icon from './assets/img/Ordering_Icon.svg';
+import Manage_and_Coach from './assets/img/Manage_and_Coach_Icon.svg'
+import awor_icon from './assets/img/awor_icon.svg';
 
-export const IconData = [
+type IconDataType = {
+  id: number;
+  title: string;
+  img: string;
+}
+
+export const IconData: IconDataType[] = [
   {
     id: 1,
     title: 'Financial Management',
@@ -52,8 +62,13 @@ export const IconData = [
   },
 ];
 
-// Pills Section
-export const PillsData = [
+/////////////////////// Pills Section
+type PillsDataType = {
+  id: number;
+  title: string;
+}
+
+export const PillsData: PillsDataType[] = [
   {
     id: 1,
     title: 'Financial',
@@ -159,3 +174,144 @@ export const PillsData = [
     title: 'B2B Status',
   },
 ];
+
+///////////////////////Store Cards Section
+type StoreDataType = {
+  id: number;
+  title: string;
+  description: string;
+  metric: string;
+  goal: string;
+  link: string;
+}
+
+export const StoreCardsData: StoreDataType[] = [
+  {
+    id: 100,
+    title: 'Sales',
+    description: 'Overall Customer Satisfaction',
+    metric: '100%',
+    goal: '80%',
+    link: 'https://acenet.aceservices.com/awor/promotional-ordering-and-execution/dynamic-promotions-instant-savings'
+  },
+  {
+    id: 200,
+    title: 'SOCi',
+    description: 'Review Response Time (Hrs)',
+    metric: '55 hrs',
+    goal: '< 24 hrs',
+    link: 'https://acenet.aceservices.com/awor/train-and-develop/associate-badge-program'
+  },
+  {
+    id: 300,
+    title: 'Employee Engagement',
+    description: 'Employee Engagement',
+    metric: '75%',
+    goal: '80%',
+    link: 'https://acenet.aceservices.com/awor/manage-and-coach/employee-engagement-survey'
+  },
+  {
+    id: 400,
+    title: 'Ace Marketing Muscle',
+    description: 'Total Emails Deployed',
+    metric: '0%',
+    goal: '2-4/month',
+    link: 'https://acenet.aceservices.com/awor/ordering/economic-order-quantities'
+  },
+  {
+    id: 500,
+    title: 'Optimal Shelf Quantity',
+    description: 'Min Order Point Acceptance',
+    metric: '42%',
+    goal: '80%',
+    link: 'https://acenet.aceservices.com/awor/inventory-record-accuracy/achieving-inventory-accuracy'
+  },
+];
+
+/////////////////////// Topics Section
+type TopicsDataType = {
+  id: number;
+  title: string;
+}
+
+export const TopicsData: TopicsDataType[] = [
+  {
+    id: 1,
+    title:'Trending topics',
+  
+  },
+  {
+    id: 2,
+    title:'Latest topics',
+   
+  },
+];
+
+type TrendingDataType = {
+  id: number;
+  title: string;
+  img: string;
+}
+
+export const TrendingContentData: TrendingDataType[] = [
+  {
+    id: 1,
+    title:'In-Stock Position',
+    img: Unproductive_inventory
+  },
+  {
+    id: 2,
+    title:'Obsolete Inventory',
+    img: Ordering_Icon
+  },
+  {
+    id: 3,
+    title:'Economic Order Quantities',
+    img: Instock_Position
+  },
+  {
+    id: 4,
+    title:'Employee Engagement Survey',
+    img: Ordering_Icon
+  },
+  {
+    id: 5,
+    title:'Minimum Order Point',
+    img: Manage_and_Coach
+  }
+];
+
+type LatestDataType = {
+  id: number;
+  title: string;
+  img: string;
+}
+
+export const LatestContentData: LatestDataType[] = [
+  {
+    id: 6,
+    title:'Customer Returns',
+    img: awor_icon
+  },
+  {
+    id: 7,
+    title:'Vendor Rebate Credits in Propello',
+    img: awor_icon
+  },
+  {
+    id: 8,
+    title:'QuickBooks Online (QBO) Integration - Propello',
+    img: awor_icon
+  },
+  {
+    id: 9,
+    title:'Inventory Shrinkage',
+    img: awor_icon
+  },
+  {
+    id: 10,
+    title:'Receiving Ace Orders',
+    img: awor_icon
+  },
+];
+
