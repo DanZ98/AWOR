@@ -1,0 +1,69 @@
+@import '../global-styles/global-styles.scss';
+
+/////// Modal Popup ///////
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); // Optional: to add a semi-transparent background
+    z-index: 1000; // Ensure the modal is on top of other elements
+    padding: 2rem; // Remove the margin to center it properly
+}
+
+.modal-container {
+    max-width: 86rem;
+    width: 100%;
+    height: 60.3rem;
+    background-color: $white;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7.8rem;
+    padding: 0 3rem;
+    background-color: $aceHelpfulRed;
+    color: $white;
+    font-size: 2.6rem;
+    font-family: $fontRobotoSlab;
+    font-weight: 500;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.modal-content {
+  padding: 3rem;
+}
+
+.modal-close-btn {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    background-color: $aceHelpfulRed;
+    border: none;
+  }
+  
+  .modal-close-btn::before,
+  .modal-close-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 35px;
+    height: 3px;
+    background-color: $white;
+  }
+  
+  .modal-close-btn::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  
+  .modal-close-btn::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
