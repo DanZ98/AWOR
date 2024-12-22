@@ -1,0 +1,49 @@
+.pills {
+  text-align: center;
+}
+
+.pills-container {
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  max-width: 110rem;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 0 1.5rem 0;
+}
+@media screen and (min-width: 768px) {
+  .pills-container {
+    white-space: normal;
+  }
+}
+
+.icon-container::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.pills-link {
+  margin: 0.7rem 0.3rem;
+  padding: 0.6rem 0.9rem;
+  font-size: 1.4rem;
+  color: #000;
+  background: #fff;
+  border: 1px solid #d1d1d1;
+  display: inline-block;
+  border-radius: 2rem;
+  text-decoration: none;
+  transition: ease all 0.4s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.pills-link:hover {
+  background: #eee;
+  cursor: pointer;
+}
+
+.pills-display {
+  display: inline-block;
+}/*# sourceMappingURL=pills-styles.css.map */

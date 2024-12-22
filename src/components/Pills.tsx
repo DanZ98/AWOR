@@ -1,34 +1,24 @@
-import "../styles/pills-styles/pills-styles.css";
-import useHorizontalDrag from "../hooks/horizontalDragg";
+import "../styles/pills-styles/pills-styles.scss";
+import { PillsData } from "../data";
 
-const Pills = ({ filteredPills, displayPill }: { filteredPills: Array<any>, displayPill: boolean } ) => {
-
-    const {
-        containerRef,
-        handleMouseDown,
-        handleMouseLeave,
-        handleMouseUp,
-        handleMouseMove,
-    } = useHorizontalDrag();
-
+const Pills = () => {
     return (
-        <div className="pills">
-            <p className="pills-container" 
-                ref={containerRef}
-                onMouseDown={handleMouseDown}
-                onMouseLeave={handleMouseLeave}
-                onMouseUp={handleMouseUp}
-                onMouseMove={handleMouseMove}>
-                {filteredPills.map((item) => {
-                    return (
-                        <a href={`#${item.title}`} key={item.id} className={`pills-link ${displayPill ? 'pills-display' : ''}`}>
-                            {item.title}
-                        </a>
-                    )})
-                }
-            </p>
-        </div>
-    )
-}
+      <div className="pills">
+         <p className="pills-container">
+            {PillsData.map((item) => {
+               return (
+                  <a
+                     href={`#${item.title}`}
+                     key={item.id}
+                     className="pills-link"
+                  >
+                     {item.title}
+                  </a>
+               );
+            })}
+         </p>
+      </div>
+   );
+};
 
 export default Pills;
