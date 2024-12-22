@@ -9,6 +9,7 @@
     @include scrollHorizontal;
     @include marginCenter;
     padding: 0 0 1.5rem 0;
+    // display: none;
     
     @media screen and (min-width: 768px) {
         white-space: normal;
@@ -26,7 +27,7 @@
     color: #000;
     background: #fff;
     border: 1px solid #d1d1d1;
-    display: none;
+    display: inline-block;
     -webkit-border-radius: 2rem;
     -moz-border-radius: 2rem;
     border-radius: 2rem;

@@ -1,61 +1,29 @@
-import { useRef, useEffect } from "react";
+import { useEffect, useRef } from "react";
 
-const useHorizontalDrag = () => {
-    const containerRef = useRef<HTMLDivElement>(null);
-    const isDragging = useRef(false);
-    const startX = useRef(0);
-    const scrollLeft = useRef(0);
+const horizontalDragg = () => {
+    const iconRef = useRef<HTMLDivElement>(null);
 
-    const handleMouseDown = (e: React.MouseEvent) => {
-        isDragging.current = true;
-        startX.current = e.pageX - (containerRef.current?.offsetLeft || 0);
-        scrollLeft.current = containerRef.current?.scrollLeft || 0;
-    };
+    const pointerScroll = (elem: HTMLElement) => {
+        const dragStart = (ev: PointerEvent) =>
+            elem.setPointerCapture(ev.pointerId);
+        const dragEnd = (ev: PointerEvent) =>
+            elem.releasePointerCapture(ev.pointerId);
+        const drag = (ev: PointerEvent) =>
+            elem.hasPointerCapture(ev.pointerId) &&
+            (elem.scrollLeft -= ev.movementX);
 
-    const handleMouseLeave = () => {
-        isDragging.current = false;
-    };
-
-    const handleMouseUp = () => {
-        isDragging.current = false;
-    };
-
-    const handleMouseMove = (e: React.MouseEvent) => {
-        if (!isDragging.current) return;
-        e.preventDefault();
-        const x = e.pageX - (containerRef.current?.offsetLeft || 0);
-        const walk = (x - startX.current) * 2; // Scroll-fast
-        if (containerRef.current) {
-            containerRef.current.scrollLeft = scrollLeft.current - walk;
-        }
+        elem.addEventListener("pointerdown", dragStart);
+        elem.addEventListener("pointerup", dragEnd);
+        elem.addEventListener("pointermove", drag);
     };
 
     useEffect(() => {
-        const container = containerRef.current;
-        if (!container) return;
-
-        const handleClick = (e: MouseEvent) => {
-            if (isDragging.current) {
-                e.preventDefault();
-                e.stopImmediatePropagation();
-            }
-        };
-
-        const links = container.querySelectorAll('a');
-        links.forEach(link => link.addEventListener('click', handleClick));
-
-        return () => {
-            links.forEach(link => link.removeEventListener('click', handleClick));
-        };
+        if (iconRef.current) {
+            pointerScroll(iconRef.current);
+        }
     }, []);
 
-    return {
-        containerRef,
-        handleMouseDown,
-        handleMouseLeave,
-        handleMouseUp,
-        handleMouseMove,
-    };
+   return iconRef;
 };
 
-export default useHorizontalDrag;
+export default horizontalDragg;

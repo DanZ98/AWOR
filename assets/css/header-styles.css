@@ -1,0 +1,19 @@
+.header {
+  padding: 2.5rem 2rem;
+  background-color: #d40029;
+  color: #fff;
+}
+
+.header-section {
+  max-width: 110rem;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-title {
+  margin-bottom: 1rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 3.6rem;
+}/*# sourceMappingURL=header-styles.css.map */

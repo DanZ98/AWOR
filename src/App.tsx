@@ -3,8 +3,7 @@ import IconSelection from "./components/IconSelection";
 import StoreOpportunities from "./components/StoreOpportunities";
 import Topics from "./components/Topics";
 import Contact from "./components/Contact";
-import Footer from "./components/FooterMain";
-import Modal from "./components/Modal";
+import FooterMain from "./components/FooterMain";
 
 const App = () => {
   return (
@@ -14,8 +13,7 @@ const App = () => {
       <StoreOpportunities />
       <Topics />
       <Contact />
-      <Footer />
-      <Modal />
+      <FooterMain />
     </div>
   );
 };
