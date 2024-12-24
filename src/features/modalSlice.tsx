@@ -5,7 +5,7 @@ const initialState = {
 };
 
 const modalSlice = createSlice({
-   name: "modalz",
+   name: "modal",
    initialState,
    reducers: {
       openModal: (state) => {

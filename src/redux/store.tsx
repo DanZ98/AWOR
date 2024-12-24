@@ -6,5 +6,8 @@ export const store = configureStore({
    reducer: {
       pills: pillsReducer,
       modal: modalReducer,
-   },
+   }
 });
+
+// Define the RootState type
+export type RootState = ReturnType<typeof store.getState>;

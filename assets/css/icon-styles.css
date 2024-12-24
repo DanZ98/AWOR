@@ -30,13 +30,6 @@
   white-space: normal;
   cursor: pointer;
 }
-@media screen and (min-width: 768px) {
-  .icon-container {
-    -webkit-user-select: auto;
-       -moz-user-select: auto;
-            user-select: auto;
-  }
-}
 
 .icon-container::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
@@ -64,7 +57,7 @@
   border: 1px solid #d40029;
   transition: ease all 0.4s;
 }
-.icon-img-container:hover {
+.icon-img-container:hover, .icon-img-container.active {
   animation: pulse-animation 1.3s infinite;
 }
 .icon-img-container .category-icon-svgcontainer {

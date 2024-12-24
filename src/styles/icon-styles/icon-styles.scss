@@ -26,10 +26,6 @@
     vertical-align: top;
     white-space: normal;
     cursor: $cursorPointer;
-    
-    @media screen and (min-width: 768px) {
-        user-select: auto;
-    }
 }
 
 .icon-container::-webkit-scrollbar {
@@ -60,7 +56,8 @@
     border: 1px solid #d40029;
     transition: ease all .4s;
     
-    &:hover {
+    &:hover,
+    &.active  {
         animation: pulse-animation 1.3s infinite;
     }
     

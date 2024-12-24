@@ -6,7 +6,7 @@ interface PillState {
 }
 
 const initialState: PillState = {
-   filteredPills: PillsData,
+   filteredPills: [],
 };
 
 const pillSlice = createSlice({
@@ -34,4 +34,5 @@ const pillSlice = createSlice({
 });
 
 export const { filterPills } = pillSlice.actions;
+
 export default pillSlice.reducer;
