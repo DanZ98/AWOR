@@ -8,9 +8,7 @@ interface Pill {
 const Pills = ({ filteredPillsz }: { filteredPillsz: Array<Pill> }) => {
    return (
       <div className="pills">
-         <p className="pills-container"
-         //  ref={iconRef}
-          >
+         <p className="pills-container">
             {filteredPillsz.map((item) => (
                <a
                   href="https://www.youtube.com/"

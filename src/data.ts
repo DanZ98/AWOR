@@ -315,3 +315,43 @@ export const LatestContentData: LatestDataType[] = [
   },
 ];
 
+/////////////////////// Store Login Section
+type StoreLoginLinksType = {
+  id: number;
+  title: string;
+}
+
+export const StoreLoginLinks:StoreLoginLinksType[] = [
+  {
+    id: 1,
+    title: 'News Archive',
+  },
+  {
+    id: 2,
+    title: 'Discussion Boards',
+  },
+  {
+    id: 3,
+    title: 'People & Store Search',
+  },
+  {
+    id: 4,
+    title: 'Help',
+  },
+  {
+    id: 5,
+    title: 'Ace Way of Retailing',
+  },
+  {
+    id: 6,
+    title: 'Settings',
+  },
+  {
+    id: 7,
+    title: 'End Store Session',
+  },
+  {
+    id: 8,
+    title: 'Logout',
+  },
+];

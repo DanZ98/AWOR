@@ -2,7 +2,7 @@ import '../styles/header-styles/header-styles.scss';
 
 const Header = () => {
   return (
-    <header className='header'>
+    <section className='header'>
       <div className='header-section'>
         <h1 className='header-title'>Ace Way of Retailing</h1>
         <p className='header-content'>
@@ -12,7 +12,7 @@ const Header = () => {
           laborum.
         </p>
       </div>
-    </header>
+    </section>
   );
 };
 

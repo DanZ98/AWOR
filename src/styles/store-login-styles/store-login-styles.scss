@@ -1,0 +1,143 @@
+@import '../global-styles/global-styles.scss';
+
+/////// Store Login Section ///////
+.store-login {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 4rem;
+    background-color: $black;
+    color: $white;
+}
+
+.store-login-lock {
+    width: 4rem;
+    height: 4rem;
+    background-color: $aceHelpfulRed;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+       @include flexCenter;
+    }
+}
+
+.store-login-lock img {
+    width: 2rem;
+    height: auto;
+
+    &:hover {
+        cursor: $cursorPointer;
+    }
+}
+
+.store-login-number {
+    @include flexCenter;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.8rem;
+}
+
+.store-login-lightcart {
+    position: absolute;
+    top: 7px;
+    right: 65px;
+    display: block;
+    width: 3.5rem;
+    height: auto;
+
+     @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.store-login-profile {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    &:hover {
+        cursor: $cursorPointer;
+    }
+
+    @media screen and (min-width: 768px) {
+        right: 1.8rem;
+    }
+}
+
+.store-login-initial {
+    width: 3.5rem;
+    height: 4rem;
+    background-color: #00acc7;
+    font-size: 1.8rem;
+    @include flexCenter;
+}
+
+.store-login-name {
+    margin-left: .5rem;
+    display: none;
+
+     @media screen and (min-width: 768px) {
+       @include flexCenter;
+    }
+}
+
+.store-login-arrow {
+    margin-left: .6rem;
+    padding: .7rem;
+    border: solid #fff;
+    border-width: 0px 4px 4px 0;
+    display: inline-block;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+}
+
+.store-login-dropdown {
+    position: absolute;
+    right: 1.5rem;
+    top: 4rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+.store-login-dropdown.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.store-login-ul {
+    list-style: none;
+    background-color: $white;
+    color: $black;
+    -webkit-border: solid 2px #8f8d8d;
+    -moz-border: solid 2px #8f8d8d;
+    border: solid 2px #8f8d8d;
+}
+
+.store-login-li:hover {
+    cursor: $cursorPointer;
+}
+
+.store-login-link {
+    display: block;
+    text-decoration: none;
+    color: $black;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    transition: ease all .1s;
+
+    &:hover {
+        background-color: $aceHelpfulRed;
+        color: $white;
+    }
+}

@@ -1,6 +1,12 @@
+import StoreLogin from "./StoreLogin";
+
 const HeaderMain = () => {
   return (
-    <div>HeaderMain</div>
+    <header>
+      <div className="header-main">
+        <StoreLogin />
+      </div>
+    </header>
   )
 }
 

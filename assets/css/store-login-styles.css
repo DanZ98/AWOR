@@ -1,0 +1,145 @@
+.store-login {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  height: 4rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.store-login-lock {
+  width: 4rem;
+  height: 4rem;
+  background-color: #d40029;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .store-login-lock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.store-login-lock img {
+  width: 2rem;
+  height: auto;
+}
+.store-login-lock img:hover {
+  cursor: pointer;
+}
+
+.store-login-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.8rem;
+}
+
+.store-login-lightcart {
+  position: absolute;
+  top: 7px;
+  right: 65px;
+  display: block;
+  width: 3.5rem;
+  height: auto;
+}
+@media screen and (min-width: 768px) {
+  .store-login-lightcart {
+    display: none;
+  }
+}
+
+.store-login-profile {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.store-login-profile:hover {
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .store-login-profile {
+    right: 1.8rem;
+  }
+}
+
+.store-login-initial {
+  width: 3.5rem;
+  height: 4rem;
+  background-color: #00acc7;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.store-login-name {
+  margin-left: 0.5rem;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .store-login-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.store-login-arrow {
+  margin-left: 0.6rem;
+  padding: 0.7rem;
+  border: solid #fff;
+  border-width: 0px 4px 4px 0;
+  display: inline-block;
+  transform: rotate(45deg);
+  border-radius: 1px;
+}
+
+.store-login-dropdown {
+  position: absolute;
+  right: 1.5rem;
+  top: 4rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+.store-login-dropdown.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.store-login-ul {
+  list-style: none;
+  background-color: #fff;
+  color: #000;
+  -webkit-border: solid 2px #8f8d8d;
+  -moz-border: solid 2px #8f8d8d;
+  border: solid 2px #8f8d8d;
+}
+
+.store-login-li:hover {
+  cursor: pointer;
+}
+
+.store-login-link {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  transition: ease all 0.1s;
+}
+.store-login-link:hover {
+  background-color: #d40029;
+  color: #fff;
+}/*# sourceMappingURL=store-login-styles.css.map */
