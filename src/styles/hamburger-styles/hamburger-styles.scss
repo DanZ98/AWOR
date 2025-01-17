@@ -1,0 +1,188 @@
+@import '../global-styles/global-styles.scss';
+
+// Mobile hamurger menu
+.mobile-hamburger {
+    position: relative;
+    top: .4rem;
+    left: .6rem;
+    width: 1em;
+    height: 1em;
+    font-size: inherit;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    &.is-lg {
+        font-size: 3.2rem;
+    }
+
+    &-line {
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: 0.13em;
+        background: currentColor;
+        transition: inherit;
+
+        &:nth-child(1) {
+            top: 0.125em;
+
+            .mobile-hamburger.is-active &,
+            .w-nav-button.w--open & {
+                top: 50%;
+                transform: translateY(-50%) rotateZ(-135deg);
+            }
+        }
+
+        &:nth-child(2) {
+            top: 0.438em;
+
+            .mobile-hamburger.is-active &,
+            .w-nav-button.w--open & {
+                right: 50%;
+                width: 0;
+            }
+        }
+
+        &:nth-child(3) {
+            top: 0.75em;
+            
+            .mobile-hamburger.is-active &,
+            .w-nav-button.w--open & {
+                top: 50%;
+                width: 100%;
+                transform: translateY(-50%) rotateZ(135deg);
+            }
+        }
+    
+    }
+    &-menu {
+        background-color: $black;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+}
+
+.hamburger {
+    position: fixed;
+    background-color: #000;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    overflow-y: scroll;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  
+    &.is-active {
+        transform: translateX(0);
+    }
+   
+    &-li {
+          line-height: 6.5rem;
+    }
+
+    &-link {
+        font-size: 3rem;
+        color: $white;
+        text-decoration: none;
+        font-weight: 700;
+
+        &:hover {
+            text-decoration: $textUnderline;
+        }
+    }
+
+    &-closebtn {
+        position: absolute;
+        top: 5%;
+        right: 1.5rem;
+        width: 3.6rem;
+        height: 3.6rem;
+    }
+
+    &-closebtn::before, &-closebtn::after  {
+        content: '';
+        position: absolute;
+        top: 47%;
+        left: 17px;
+        width: 4.6rem;
+        height: .4rem;
+        background-color: $white;
+    }
+
+    &-closebtn::before {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &-closebtn::after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    &-closebtn:hover {
+        cursor: $cursorPointer;
+    }
+
+    &-menu {
+        margin: 13rem 0 0 3rem;
+    }
+
+    &-submenu, &-submenu2  {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
+    }
+
+    &-submenu {
+        margin-left: 3.4rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
+    }
+
+    &-submenu.active, &-submenu2.active {
+        max-height: 100vh; 
+    }
+
+    &-submenu-li {
+        list-style: none;
+        line-height: 4.5rem;
+       
+    }
+
+    &-link.active {
+        color: #099fbc;
+    }
+
+    &-submenu-link {
+        font-size: 2.5rem;
+        text-decoration: none;
+        color: $white;
+        font-weight: 700;
+
+        &:hover {
+            text-decoration: $textUnderline;
+        }
+    }
+
+    &-submenu-link.active {
+        max-height: 500px;
+    } 
+
+    &-submenu2 {
+        margin-left: 2.4rem;
+    }
+
+    &-submenu2-link {
+        font-size: 1.8rem;
+        text-decoration: none;
+        color: $white;
+    }
+
+    .fa-wrench {
+        color: $aceHelpfulRed;
+    }
+}

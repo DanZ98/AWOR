@@ -1,3 +1,9 @@
+.header-main {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
 .store-login {
   display: flex;
   justify-content: space-between;
@@ -6,7 +12,6 @@
   background-color: #000;
   color: #fff;
 }
-
 .store-login-lock {
   width: 4rem;
   height: 4rem;
@@ -20,7 +25,6 @@
     align-items: center;
   }
 }
-
 .store-login-lock img {
   width: 2rem;
   height: auto;
@@ -28,7 +32,6 @@
 .store-login-lock img:hover {
   cursor: pointer;
 }
-
 .store-login-number {
   display: flex;
   justify-content: center;
@@ -39,7 +42,6 @@
   transform: translateX(-50%);
   font-size: 1.8rem;
 }
-
 .store-login-lightcart {
   position: absolute;
   top: 7px;
@@ -48,12 +50,14 @@
   width: 3.5rem;
   height: auto;
 }
+.store-login-lightcart:hover {
+  cursor: pointer;
+}
 @media screen and (min-width: 768px) {
   .store-login-lightcart {
     display: none;
   }
 }
-
 .store-login-profile {
   display: flex;
   align-items: center;
@@ -69,7 +73,6 @@
     right: 1.8rem;
   }
 }
-
 .store-login-initial {
   width: 3.5rem;
   height: 4rem;
@@ -79,7 +82,6 @@
   justify-content: center;
   align-items: center;
 }
-
 .store-login-name {
   margin-left: 0.5rem;
   display: none;
@@ -91,7 +93,6 @@
     align-items: center;
   }
 }
-
 .store-login-arrow {
   margin-left: 0.6rem;
   padding: 0.7rem;
@@ -101,7 +102,6 @@
   transform: rotate(45deg);
   border-radius: 1px;
 }
-
 .store-login-dropdown {
   position: absolute;
   right: 1.5rem;
@@ -111,13 +111,11 @@
   transform: translateY(-10px);
   transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
 }
-
 .store-login-dropdown.show {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
-
 .store-login-ul {
   list-style: none;
   background-color: #fff;
@@ -126,11 +124,9 @@
   -moz-border: solid 2px #8f8d8d;
   border: solid 2px #8f8d8d;
 }
-
 .store-login-li:hover {
   cursor: pointer;
 }
-
 .store-login-link {
   display: block;
   text-decoration: none;

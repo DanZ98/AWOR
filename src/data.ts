@@ -355,3 +355,829 @@ export const StoreLoginLinks:StoreLoginLinksType[] = [
     title: 'Logout',
   },
 ];
+
+/////////////////////// Hamburger Menu Link Section
+type HamburgerLinkType = {
+   id: number;
+   title: string;
+};
+
+export const HamburgerLinkType: HamburgerLinkType[] = [
+   {
+      id: 1,
+      title: "Home",
+   },
+   {
+      id: 2,
+      title: "Manage Product",
+   },
+   {
+      id: 3,
+      title: "Manage My Store",
+   },
+   {
+      id: 4,
+      title: "Marketing",
+   },
+   {
+      id: 5,
+      title: "AWOR",
+   },
+   {
+      id: 6,
+      title: "Growth Drivers",
+   },
+   {
+      id: 7,
+      title: "About Ace",
+   },
+   {
+      id: 8,
+      title: "Analytics Dashboard",
+   },
+];
+
+/////////////////////// Hamburger Menu Sublink Section
+type HamburgerSubLinkType = {
+   id: number;
+   title: string;
+   showIcon?: boolean;
+};
+
+export const HamburgerSubLinkType: HamburgerSubLinkType[] = [
+   {
+      id: 1,
+      title: "Inventory & Planograms",
+   },
+   {
+      id: 2,
+      title: "Item Management",
+   },
+   {
+      id: 3,
+      title: "Order Management",
+   },
+   {
+      id: 4,
+      title: "Order Product",
+   },
+   {
+      id: 5,
+      title: "Financial",
+   },
+   {
+      id: 6,
+      title: "People Management",
+   },
+   {
+      id: 7,
+      title: "Security & Prepardness",
+   },
+   {
+      id: 8,
+      title: "Services & Delivery",
+   },
+   {
+      id: 9,
+      title: "Store Environment",
+   },
+   {
+      id: 10,
+      title: "Systems & Operations",
+   },
+   {
+      id: 11,
+      title: "Ace Rewards",
+   },
+   {
+      id: 12,
+      title: "Digital Marketing",
+   },
+   {
+      id: 13,
+      title: "Traditional Marketing",
+   },
+   {
+      id: 14,
+      title: "Promotions",
+   },
+   {
+      id: 15,
+      title: "AWOR Home Page",
+   },
+   {
+      id: 16,
+      title: "Business to Business",
+   },
+   {
+      id: 17,
+      title: "E-Commerce",
+   },
+   {
+      id: 18,
+      title: "Financial Management",
+   },
+   {
+      id: 19,
+      title: "Helpful Customer Service",
+   },
+   {
+      id: 20,
+      title: "Inventory Management",
+   },
+   {
+      id: 21,
+      title: "Loss Prevention",
+   },
+   {
+      id: 22,
+      title: "Marketing & Promotions",
+   },
+   {
+      id: 23,
+      title: "People Management",
+   },
+   {
+      id: 24,
+      title: "Ace Initiatives",
+   },
+   {
+      id: 25,
+      title: "Business Specialties",
+   },
+   {
+      id: 26,
+      title: "Level 3 Programs",
+   },
+   {
+      id: 27,
+      title: "Retail Growth Strategy",
+   },
+   {
+      id: 28,
+      title: "Company Information",
+   },
+   {
+      id: 29,
+      title: "Conventions",
+   },
+   {
+      id: 30,
+      title: "International Retailers",
+   },
+   {
+      id: 31,
+      title: "Operations",
+   },
+];
+
+/////////////////////// Hamburger Menu Sublink2 Section
+type HamburgerSubLink2Type = {
+	id: number;
+	title: string;
+	showIcon: boolean;
+};
+
+export const HamburgerSubLink2Type: HamburgerSubLinkType[] = [
+	{
+		id: 1,
+		title: "Category Management",
+      showIcon: true,
+	},
+	{
+		id: 2,
+		title: "Departments",
+	},
+	{
+		id: 3,
+		title: "Inventory Management",
+	},
+	{
+		id: 4,
+		title: "Inventory Health Check",
+	},
+	{
+		id: 5,
+		title: "Legislative Issues",
+	},
+	{
+		id: 6,
+		title: "Opportunity Report",
+	},
+	{
+		id: 7,
+		title: "Planograms",
+	},
+	{
+		id: 8,
+		title: "Product Recalls & Stop Sales",
+	},
+	{
+		id: 9,
+		title: "Chemical Lookup",
+	},
+	{
+		id: 10,
+		title: "Claims",
+	},
+	{
+		id: 11,
+		title: "Defective Goods",
+	},
+	{
+		id: 12,
+		title: "Item Change Management",
+	},
+	{
+		id: 13,
+		title: "Mobile Item Lookup",
+	},
+	{
+		id: 14,
+		title: "Planogram Change Management",
+	},
+	{
+		id: 15,
+		title: "Pricing",
+	},
+	{
+		id: 16,
+		title: "Pricing Profile",
+	},
+	{
+		id: 17,
+		title: "Request Bin Tags",
+	},
+	{
+		id: 18,
+		title: "Request Hotsheet",
+	},
+	{
+		id: 19,
+		title: "Safety Data Sheets",
+	},
+	{
+		id: 20,
+		title: "Suppress Bin Tags",
+	},
+	{
+		id: 21,
+		title: "View Hotsheets/Invoices",
+	},
+	{
+		id: 22,
+		title: "Weather Sales Impact",
+	},
+	{
+		id: 23,
+		title: "AceHardware.com Listing",
+	},
+	{
+		id: 24,
+		title: "Customer Orders",
+	},
+	{
+		id: 25,
+		title: "Customer Priority Order Listing",
+	},
+	{
+		id: 26,
+		title: "Management & Receiving Docs",
+	},
+	{
+		id: 27,
+		title: "Order Tracking",
+	},
+	{
+		id: 28,
+		title: "Special Order Listing",
+	},
+	{
+		id: 29,
+		title: "Stock Reserve Backorder Listing",
+	},
+	{
+		id: 30,
+		title: "Stock Reserve Listing",
+	},
+	{
+		id: 31,
+		title: "Batch/Quick Entry",
+	},
+	{
+		id: 32,
+		title: "Browse Product & Vendors",
+	},
+	{
+		id: 33,
+		title: "Conversion Batch/Quick Entry",
+	},
+	{
+		id: 34,
+		title: "Discovery Assortment Planner",
+	},
+	{
+		id: 35,
+		title: "Dropship Programs",
+	},
+	{
+		id: 36,
+		title: "Event Planner",
+	},
+	{
+		id: 37,
+		title: "International Deals",
+	},
+	{
+		id: 38,
+		title: "Paint Chips (Ace/C+K)",
+	},
+	{
+		id: 39,
+		title: "Paint Chips (Benjamin Moore)",
+	},
+	{
+		id: 40,
+		title: "Paint Chips (Magnolia Home)",
+	},
+	{
+		id: 41,
+		title: "Preseason Planner",
+	},
+	{
+		id: 42,
+		title: "Ace Bankcard - Online Settlement",
+	},
+	{
+		id: 43,
+		title: "Ace Gift Card - Settlement Portal",
+	},
+	{
+		id: 44,
+		title: "Ace Online Statement",
+	},
+	{
+		id: 45,
+		title: "Ace Statement Coding",
+	},
+	{
+		id: 46,
+		title: "Ace Statement - Current Activity",
+	},
+	{
+		id: 47,
+		title: "Ace Statement & Invoices",
+	},
+	{
+		id: 48,
+		title: "Bankcard Program",
+	},
+	{
+		id: 49,
+		title: "Financial Management",
+	},
+	{
+		id: 50,
+		title: "Gift Card",
+	},
+	{
+		id: 51,
+		title: "SAVINGSource",
+	},
+	{
+		id: 52,
+		title: "Ace Learning Place",
+	},
+	{
+		id: 53,
+		title: "ACENET Security Administration",
+	},
+	{
+		id: 54,
+		title: "Helpful Experience Dashboard",
+	},
+	{
+		id: 55,
+		title: "Helpful Experience Programs",
+	},
+	{
+		id: 56,
+		title: "People First Planner",
+	},
+	{
+		id: 57,
+		title: "Recruiting & Employment",
+	},
+	{
+		id: 58,
+		title: "Retailer Self-Assessment Survey",
+	},
+	{
+		id: 59,
+		title: "Retail Training & PRS",
+	},
+	{
+		id: 60,
+		title: "Ace Insurance",
+	},
+	{
+		id: 61,
+		title: "Disaster Preparation",
+	},
+	{
+		id: 62,
+		title: "Loss Prevention",
+	},
+	{
+		id: 63,
+		title: "Delivery and Services",
+	},
+	{
+		id: 64,
+		title: "Store Services",
+	},
+	{
+		id: 65,
+		title: "Store Environment Resources",
+	},
+	{
+		id: 66,
+		title: "Ace Way of Retailing",
+	},
+	{
+		id: 67,
+		title: "ADW Reports",
+	},
+	{
+		id: 68,
+		title: "Retail Technology",
+	},
+	{
+		id: 69,
+		title: "Ace Rewards Program",
+	},
+	{
+		id: 70,
+		title: "Ace Rewards Maintenance",
+	},
+	{
+		id: 71,
+		title: "Ace Marketing Muscle",
+	},
+	{
+		id: 72,
+		title: "Ace Style Guide",
+	},
+	{
+		id: 73,
+		title: "acehardware.com",
+	},
+	{
+		id: 74,
+		title: "Brandfolder",
+	},
+	{
+		id: 75,
+		title: "Local Email",
+	},
+	{
+		id: 76,
+		title: "PR & Social Media",
+	},
+	{
+		id: 77,
+		title: "Search & Online Marketing",
+	},
+	{
+		id: 78,
+		title: "SOCi",
+	},
+	{
+		id: 79,
+		title: "Webstop Digital Circular",
+	},
+	{
+		id: 80,
+		title: "100th Anniversary",
+	},
+	{
+		id: 81,
+		title: "Ace Brand Identity Standards",
+	},
+	{
+		id: 82,
+		title: "Local",
+	},
+	{
+		id: 83,
+		title: "Media Advertising",
+	},
+	{
+		id: 84,
+		title: "Media Manager",
+	},
+	{
+		id: 85,
+		title: "Win the Month",
+	},
+	{
+		id: 86,
+		title: "In-Store Parties & Demos",
+	},
+	{
+		id: 87,
+		title: "Sign Kit Customization",
+	},
+	{
+		id: 88,
+		title: "Vendor Promotional Pricing Changes",
+	},
+	{
+		id: 89,
+		title: "B2B on Acehardware.com",
+	},
+	{
+		id: 90,
+		title: "System Setup & Maintenance",
+	},
+	{
+		id: 91,
+		title: "Order Management",
+	},
+	{
+		id: 92,
+		title: "Accounts Payable",
+	},
+	{
+		id: 93,
+		title: "Accounts Receivable",
+	},
+	{
+		id: 94,
+		title: "Financial Reconciliation",
+	},
+	{
+		id: 95,
+		title: "Financing & Funding",
+	},
+	{
+		id: 96,
+		title: "Payroll Processing",
+	},
+	{
+		id: 97,
+		title: "Reports & Measurements",
+	},
+	{
+		id: 98,
+		title: "Staffing & Organization",
+	},
+	{
+		id: 99,
+		title: "Helpful Experience",
+	},
+	{
+		id: 100,
+		title: "Measure Helpful",
+	},
+	{
+		id: 101,
+		title: "In-Stock Position",
+	},
+	{
+		id: 102,
+		title: "Inventory Record Accuracy",
+	},
+	{
+		id: 103,
+		title: "Item Setup",
+	},
+	{
+		id: 104,
+		title: "Merchandising",
+	},
+	{
+		id: 105,
+		title: "Ordering",
+	},
+	{
+		id: 106,
+		title: "Point of Sale Transactions",
+	},
+	{
+		id: 107,
+		title: "Reports & Measurements",
+	},
+	{
+		id: 108,
+		title: "Unproductive Inventory",
+	},
+	{
+		id: 109,
+		title: "Physical Security",
+	},
+	{
+		id: 110,
+		title: "Store Operations",
+	},
+	{
+		id: 111,
+		title: "Ace Rewards",
+	},
+	{
+		id: 112,
+		title: "Digital Marketing",
+	},
+	{
+		id: 113,
+		title: "Gift Cards",
+	},
+	{
+		id: 114,
+		title: "Local Marketing",
+	},
+	{
+		id: 115,
+		title: "Marketing Planning",
+	},
+	{
+		id: 116,
+		title: "Promotional Ordering & Execution",
+	},
+	{
+		id: 117,
+		title: "Retail Pricing",
+	},
+	{
+		id: 118,
+		title: "Accounting and Tax",
+	},
+	{
+		id: 119,
+		title: "Demand Scheduling and Timekeeping",
+	},
+	{
+		id: 120,
+		title: "Manage and Coach",
+	},
+	{
+		id: 121,
+		title: "Org Chart / Job Descriptions",
+	},
+	{
+		id: 122,
+		title: "Payroll and Benefits",
+	},
+	{
+		id: 123,
+		title: "Recruit, Hire and Onboard",
+	},
+	{
+		id: 124,
+		title: "Train and Develop",
+	},
+	{
+		id: 125,
+		title: "Customer First Sales Culture",
+	},
+	{
+		id: 126,
+		title: "ELEVATE Ace",
+	},
+	{
+		id: 127,
+		title: "Famous for Four",
+	},
+	{
+		id: 128,
+		title: "Local Lift Max",
+	},
+	{
+		id: 129,
+		title: "Logistics Revolution",
+	},
+	{
+		id: 130,
+		title: "Win Big in Q4",
+	},
+	{
+		id: 131,
+		title: "YardRx",
+	},
+	{
+		id: 132,
+		title: "Ace Hardware Home Services",
+	},
+	{
+		id: 133,
+		title: "B2B - Business to Business",
+	},
+	{
+		id: 134,
+		title: "B2B Online Account Management",
+	},
+	{
+		id: 135,
+		title: "B2B - Paint",
+	},
+	{
+		id: 136,
+		title: "Drop Ship Building Materials",
+	},
+	{
+		id: 137,
+		title: "LED Savings Estimator",
+	},
+	{
+		id: 138,
+		title: "Rental",
+	},
+	{
+		id: 139,
+		title: "Hand Tools Level 3",
+	},
+	{
+		id: 140,
+		title: "Impulse",
+	},
+	{
+		id: 141,
+		title: "Power Tool Accessories",
+	},
+	{
+		id: 142,
+		title: "STIHL",
+	},
+	{
+		id: 143,
+		title: "ADW Reports",
+	},
+	{
+		id: 144,
+		title: "Higher Ground",
+	},
+	{
+		id: 145,
+		title: "Retail Analytics Dashboard",
+	},
+	{
+		id: 146,
+		title: "Store Growth",
+	},
+	{
+		id: 147,
+		title: "Ace Foundation",
+	},
+	{
+		id: 148,
+		title: "Ace Helpful Fund",
+	},
+	{
+		id: 149,
+		title: "Company Information",
+	},
+	{
+		id: 150,
+		title: "Retail Support & Logistics",
+	},
+	{
+		id: 151,
+		title: "Retailers & Groups",
+	},
+	{
+		id: 152,
+		title: "Stockholder Relations",
+	},
+	{
+		id: 153,
+		title: "2025 Spring Convention",
+	},
+	{
+		id: 154,
+		title: "Future Conventions",
+	},
+	{
+		id: 155,
+		title: "International Programs & Information",
+	},
+	{
+		id: 156,
+		title: "Ace Identity Standards",
+	},
+	{
+		id: 157,
+		title: "Ace Way of Retailing",
+	},
+	{
+		id: 158,
+		title: "General Member Standards / Ace Brand",
+	},
+	{
+		id: 159,
+		title: "Standards",
+	},
+	{
+		id: 160,
+		title: "Help",
+	},
+];
