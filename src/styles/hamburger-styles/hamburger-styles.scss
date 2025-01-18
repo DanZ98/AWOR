@@ -145,6 +145,7 @@
 
     &-submenu.active, &-submenu2.active {
         max-height: 100vh; 
+         overflow: auto;
     }
 
     &-submenu-li {

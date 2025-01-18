@@ -118,6 +118,7 @@
 }
 .hamburger-submenu.active, .hamburger-submenu2.active {
   max-height: 100vh;
+  overflow: auto;
 }
 .hamburger-submenu-li {
   list-style: none;

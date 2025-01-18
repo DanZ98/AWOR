@@ -542,7 +542,6 @@ export const HamburgerSubLink2Type: HamburgerSubLinkType[] = [
 	{
 		id: 1,
 		title: "Category Management",
-      showIcon: true,
 	},
 	{
 		id: 2,
@@ -563,10 +562,12 @@ export const HamburgerSubLink2Type: HamburgerSubLinkType[] = [
 	{
 		id: 6,
 		title: "Opportunity Report",
+		showIcon: true,
 	},
 	{
 		id: 7,
 		title: "Planograms",
+		showIcon: true,
 	},
 	{
 		id: 8,
@@ -575,26 +576,32 @@ export const HamburgerSubLink2Type: HamburgerSubLinkType[] = [
 	{
 		id: 9,
 		title: "Chemical Lookup",
+		showIcon: true,
 	},
 	{
 		id: 10,
 		title: "Claims",
+		showIcon: true,
 	},
 	{
 		id: 11,
 		title: "Defective Goods",
+		showIcon: true,
 	},
 	{
 		id: 12,
 		title: "Item Change Management",
+		showIcon: true,
 	},
 	{
 		id: 13,
 		title: "Mobile Item Lookup",
+		showIcon: true,
 	},
 	{
 		id: 14,
 		title: "Planogram Change Management",
+		showIcon: true,
 	},
 	{
 		id: 15,
@@ -603,26 +610,32 @@ export const HamburgerSubLink2Type: HamburgerSubLinkType[] = [
 	{
 		id: 16,
 		title: "Pricing Profile",
+		showIcon: true,
 	},
 	{
 		id: 17,
 		title: "Request Bin Tags",
+		showIcon: true,
 	},
 	{
 		id: 18,
 		title: "Request Hotsheet",
+		showIcon: true,
 	},
 	{
 		id: 19,
 		title: "Safety Data Sheets",
+		showIcon: true,
 	},
 	{
 		id: 20,
 		title: "Suppress Bin Tags",
+		showIcon: true,
 	},
 	{
 		id: 21,
 		title: "View Hotsheets/Invoices",
+		showIcon: true,
 	},
 	{
 		id: 22,
@@ -631,50 +644,62 @@ export const HamburgerSubLink2Type: HamburgerSubLinkType[] = [
 	{
 		id: 23,
 		title: "AceHardware.com Listing",
+		showIcon: true,
 	},
 	{
 		id: 24,
 		title: "Customer Orders",
+		showIcon: true,
 	},
 	{
 		id: 25,
 		title: "Customer Priority Order Listing",
+		showIcon: true,
 	},
 	{
 		id: 26,
 		title: "Management & Receiving Docs",
+		showIcon: true,
 	},
 	{
 		id: 27,
 		title: "Order Tracking",
+		showIcon: true,
 	},
 	{
 		id: 28,
 		title: "Special Order Listing",
+		showIcon: true,
 	},
 	{
 		id: 29,
 		title: "Stock Reserve Backorder Listing",
+		showIcon: true,
 	},
 	{
 		id: 30,
 		title: "Stock Reserve Listing",
+		showIcon: true,
 	},
 	{
 		id: 31,
 		title: "Batch/Quick Entry",
+		showIcon: true,
 	},
 	{
 		id: 32,
 		title: "Browse Product & Vendors",
+		showIcon: true,
 	},
 	{
 		id: 33,
 		title: "Conversion Batch/Quick Entry",
+		showIcon: true,
 	},
 	{
 		id: 34,
 		title: "Discovery Assortment Planner",
+		showIcon: true,
 	},
 	{
 		id: 35,
@@ -683,50 +708,62 @@ export const HamburgerSubLink2Type: HamburgerSubLinkType[] = [
 	{
 		id: 36,
 		title: "Event Planner",
+		showIcon: true,
 	},
 	{
 		id: 37,
 		title: "International Deals",
+		showIcon: true,
 	},
 	{
 		id: 38,
 		title: "Paint Chips (Ace/C+K)",
+		showIcon: true,
 	},
 	{
 		id: 39,
 		title: "Paint Chips (Benjamin Moore)",
+		showIcon: true,
 	},
 	{
 		id: 40,
 		title: "Paint Chips (Magnolia Home)",
+		showIcon: true,
 	},
 	{
 		id: 41,
 		title: "Preseason Planner",
+		showIcon: true,
 	},
 	{
 		id: 42,
 		title: "Ace Bankcard - Online Settlement",
+		showIcon: true,
 	},
 	{
 		id: 43,
 		title: "Ace Gift Card - Settlement Portal",
+		showIcon: true,
 	},
 	{
 		id: 44,
 		title: "Ace Online Statement",
+		showIcon: true,
 	},
 	{
 		id: 45,
 		title: "Ace Statement Coding",
+		showIcon: true,
 	},
 	{
 		id: 46,
 		title: "Ace Statement - Current Activity",
+		showIcon: true,
 	},
 	{
 		id: 47,
 		title: "Ace Statement & Invoices",
+		showIcon: true,
 	},
 	{
 		id: 48,
@@ -747,14 +784,17 @@ export const HamburgerSubLink2Type: HamburgerSubLinkType[] = [
 	{
 		id: 52,
 		title: "Ace Learning Place",
+		showIcon: true,
 	},
 	{
 		id: 53,
 		title: "ACENET Security Administration",
+		showIcon: true,
 	},
 	{
 		id: 54,
 		title: "Helpful Experience Dashboard",
+		showIcon: true,
 	},
 	{
 		id: 55,
@@ -771,6 +811,7 @@ export const HamburgerSubLink2Type: HamburgerSubLinkType[] = [
 	{
 		id: 58,
 		title: "Retailer Self-Assessment Survey",
+		showIcon: true,
 	},
 	{
 		id: 59,
@@ -791,6 +832,7 @@ export const HamburgerSubLink2Type: HamburgerSubLinkType[] = [
 	{
 		id: 63,
 		title: "Delivery and Services",
+		showIcon: true,
 	},
 	{
 		id: 64,
@@ -807,6 +849,7 @@ export const HamburgerSubLink2Type: HamburgerSubLinkType[] = [
 	{
 		id: 67,
 		title: "ADW Reports",
+		showIcon: true,
 	},
 	{
 		id: 68,
@@ -819,14 +862,17 @@ export const HamburgerSubLink2Type: HamburgerSubLinkType[] = [
 	{
 		id: 70,
 		title: "Ace Rewards Maintenance",
+		showIcon: true,
 	},
 	{
 		id: 71,
 		title: "Ace Marketing Muscle",
+		showIcon: true,
 	},
 	{
 		id: 72,
 		title: "Ace Style Guide",
+		showIcon: true,
 	},
 	{
 		id: 73,
@@ -851,6 +897,7 @@ export const HamburgerSubLink2Type: HamburgerSubLinkType[] = [
 	{
 		id: 78,
 		title: "SOCi",
+		showIcon: true,
 	},
 	{
 		id: 79,
@@ -863,6 +910,7 @@ export const HamburgerSubLink2Type: HamburgerSubLinkType[] = [
 	{
 		id: 81,
 		title: "Ace Brand Identity Standards",
+		showIcon: true,
 	},
 	{
 		id: 82,
@@ -875,6 +923,7 @@ export const HamburgerSubLink2Type: HamburgerSubLinkType[] = [
 	{
 		id: 84,
 		title: "Media Manager",
+		showIcon: true,
 	},
 	{
 		id: 85,
@@ -887,6 +936,7 @@ export const HamburgerSubLink2Type: HamburgerSubLinkType[] = [
 	{
 		id: 87,
 		title: "Sign Kit Customization",
+		showIcon: true,
 	},
 	{
 		id: 88,
@@ -1071,14 +1121,17 @@ export const HamburgerSubLink2Type: HamburgerSubLinkType[] = [
 	{
 		id: 133,
 		title: "B2B - Business to Business",
+		showIcon: true,
 	},
 	{
 		id: 134,
 		title: "B2B Online Account Management",
+		showIcon: true,
 	},
 	{
 		id: 135,
 		title: "B2B - Paint",
+		showIcon: true,
 	},
 	{
 		id: 136,
@@ -1087,6 +1140,7 @@ export const HamburgerSubLink2Type: HamburgerSubLinkType[] = [
 	{
 		id: 137,
 		title: "LED Savings Estimator",
+		showIcon: true,
 	},
 	{
 		id: 138,
@@ -1111,6 +1165,7 @@ export const HamburgerSubLink2Type: HamburgerSubLinkType[] = [
 	{
 		id: 143,
 		title: "ADW Reports",
+		showIcon: true,
 	},
 	{
 		id: 144,
@@ -1119,6 +1174,7 @@ export const HamburgerSubLink2Type: HamburgerSubLinkType[] = [
 	{
 		id: 145,
 		title: "Retail Analytics Dashboard",
+		showIcon: true,
 	},
 	{
 		id: 146,
