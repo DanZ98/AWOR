@@ -1,5 +1,8 @@
 .topics {
   background: url(../../assets/img/topics-bk.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   display: grid;
   place-items: center;
@@ -76,4 +79,6 @@
   margin-left: 1.5rem;
   color: #333;
   font-weight: 500;
-}/*# sourceMappingURL=topic-styles.css.map */
+}
+
+/*# sourceMappingURL=topic-styles.css.map */

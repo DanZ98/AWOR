@@ -31,9 +31,13 @@
   color: #000;
   background: #fff;
   border: 1px solid #d1d1d1;
-  display: none;
+  display: inline-block;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
   border-radius: 2rem;
   text-decoration: none;
+  -webkit-transition: ease all 0.4s;
+  -moz-transition: ease all 0.4s;
   transition: ease all 0.4s;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -46,4 +50,6 @@
 
 .pills-display {
   display: inline-block;
-}/*# sourceMappingURL=pills-styles.css.map */
+}
+
+/*# sourceMappingURL=pills-styles.css.map */

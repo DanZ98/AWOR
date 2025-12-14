@@ -17,3 +17,12 @@
     font-weight: $fontWeight400;
     font-size: 3.6rem;
 }
+
+.header-aworbtn-container {
+    margin-top: 2rem;
+}
+
+.about-awor-btn {
+    @include aworBtn;
+    text-decoration: none;
+}

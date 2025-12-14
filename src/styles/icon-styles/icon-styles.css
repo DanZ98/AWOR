@@ -1,29 +1,32 @@
 .icon {
+  white-space: nowrap;
   background-color: #fff;
-}
-
-.icon-container {
-  display: block;
-  padding: 2.5rem 0 1.5rem 0;
   max-width: 110rem;
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  white-space: nowrap;
-  overflow-x: scroll;
-  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: auto;
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
 }
-@media screen and (min-width: 768px) {
-  .icon-container {
-    -webkit-user-select: auto;
-       -moz-user-select: auto;
-            user-select: auto;
+@media screen and (min-width: 1075px) {
+  .icon {
+    white-space: normal;
   }
+}
+
+.icon::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.icon-container {
+  display: inline-block;
+  width: 10rem;
+  margin: 2.5rem 1.7rem;
+  vertical-align: top;
+  white-space: normal;
+  cursor: pointer;
 }
 
 .icon-container::-webkit-scrollbar {
@@ -41,6 +44,8 @@
 }
 
 .icon-img-container {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
   width: 5.3rem;
   height: 5.3rem;
@@ -52,7 +57,7 @@
   border: 1px solid #d40029;
   transition: ease all 0.4s;
 }
-.icon-img-container:hover {
+.icon-img-container:hover, .icon-img-container.active {
   animation: pulse-animation 1.3s infinite;
 }
 .icon-img-container .category-icon-svgcontainer {
@@ -70,6 +75,8 @@
   }
 }
 .icon-img-container:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
   transform: scale(1.1);
 }
 .icon-img-container .icon-image {
@@ -85,4 +92,6 @@
   color: #000;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
-}/*# sourceMappingURL=icon-styles.css.map */
+}
+
+/*# sourceMappingURL=icon-styles.css.map */

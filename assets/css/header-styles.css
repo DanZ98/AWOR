@@ -16,4 +16,23 @@
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
   font-size: 3.6rem;
+}
+
+.header-aworbtn-container {
+  margin-top: 2rem;
+}
+
+.about-awor-btn {
+  color: #d40029;
+  background-color: #fff;
+  padding: 0.8rem 1.6rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  white-space: nowrap;
+  border-radius: 4px;
+  transition: ease all 0.4s;
+  text-decoration: none;
+}
+.about-awor-btn:hover {
+  background-color: #eee;
 }/*# sourceMappingURL=header-styles.css.map */
